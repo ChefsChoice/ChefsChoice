@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <data>
-        <variable
-            name="photo"
-            type="com.example.myapplication.network.Recipes" />
-    </data>
-
-
-<androidx.cardview.widget.CardView
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/white"
     app:cardElevation="8dp"
     android:layout_margin="8dp">
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,17 +18,16 @@
             android:singleLine="true"
             android:ellipsize="marquee"
             android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
             android:textStyle="bold"
             android:textColor="@color/green"
             android:textSize="22sp"
             android:padding="8dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:text="@{photo.title}"/>
+            android:layout_height="wrap_content"/>
 
         <ImageView
             android:id="@+id/imageView_food"
-            app:imageUrl="@{photo.image}"
             android:scaleType="centerCrop"
             android:layout_margin="8dp"
             android:layout_width="match_parent"
@@ -52,4 +39,3 @@
 
 
 </androidx.cardview.widget.CardView>
-</layout>

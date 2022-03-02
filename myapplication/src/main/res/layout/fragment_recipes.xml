@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
- main
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RecipesFragment">
- UI_branch
 
-    <data>
-       <variable
-        name="viewModel"
-        type="com.example.myapplication.RecipesViewModel" />
-    </data>
-
- main
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.myapplication.RecipesFragment">
-
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="410dp"
+        android:layout_height="540dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -64,47 +57,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-UI_branch
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            app:listData="@{viewModel.photos}"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:layout_width="410dp"
-            android:layout_height="540dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/searchView"
-            app:layout_constraintVertical_bias="0.774"
-            tools:listitem="@layout/recipe_list"
-            android:clipToPadding="false"/>
-
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="300dp"
-            android:layout_height="69dp"
-            app:layout_constraintBottom_toTopOf="@+id/recycler_view"
-            app:layout_constraintEnd_toStartOf="@+id/button"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.026"
-            android:queryHint="Enter ingredients from your fridge or pantry"/>
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="67dp"
-            android:layout_height="72dp"
-            android:layout_marginBottom="139dp"
-            android:textAppearance="@drawable/ic_camera"
-            app:layout_constraintBottom_toTopOf="@+id/recycler_view"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/searchView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</layout>
+</androidx.constraintlayout.widget.ConstraintLayout>
