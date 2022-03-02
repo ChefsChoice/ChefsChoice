@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
+
 
     <application
         android:allowBackup="true"
@@ -9,6 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChefsChoice">
+
+        <activity
+            android:name=".MainActivityMLK"
+            android:exported="false" />
         <activity
             android:name=".MainActivity2"
             android:exported="false" />

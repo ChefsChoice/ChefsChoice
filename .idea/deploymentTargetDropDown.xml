@@ -7,11 +7,19 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
+ main
+            
+
             <value value="C:\Users\lucya\.android\avd\Pixel_4_API_30.avd" />
+ UI_branch
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
+ main
+  
+
     <timeTargetWasSelectedWithDropDown value="2022-03-01T22:55:05.305137700Z" />
+ UI_branch
   </component>
 </project>
