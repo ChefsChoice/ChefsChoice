@@ -43,8 +43,8 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7: "
 
     // the missing link! MLKit Image Labeling
-    implementation 'com.google.mlkit:image-labeling:17.0.5'
+    implementation 'com.google.mlkit:image-labeling:17.0.7'
 
-    // Use this dependency to bundle the model with your app
-    implementation 'com.google.mlkit:barcode-scanning:17.0.2'
+    // Add this line for the QR code Scanner
+    implementation "com.journeyapps:zxing-android-embedded:3.6.0"
 }
