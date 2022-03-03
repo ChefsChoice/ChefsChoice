@@ -1,17 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+ main
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/food3"
+    android:backgroundTint="@color/black"
     tools:context=".HomeFragment">
+ 
 
-    <!-- TODO: Update blank fragment layout -->
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        tools:context=".HomeFragment">
 
-</FrameLayout>
+
+        <TextView
+            android:id="@+id/feelingHungry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="Feeling hungry?"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try the Recipe of the Day"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/recipeOfTheDay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/feelingHungry"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/recipeOfTheDay"
+            android:layout_width="264dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="128dp"
+            android:src="@drawable/food3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feelingHungry"
+            app:layout_constraintVertical_bias="0.633" />
+
+        <TextView
+            android:id="@+id/dishTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="Dish Title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipeOfTheDay"
+            app:layout_constraintVertical_bias="0.004" />
+
+        <TextView
+            android:id="@+id/didYouKnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Did you know?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.77" />
+
+        <TextView
+            android:id="@+id/foodTrivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert food trivia here"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/didYouKnow"
+            app:layout_constraintVertical_bias="0.131" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
