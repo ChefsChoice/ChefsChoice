@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Tyree/Downloads/ChefsChoice/myapplication/src/main/res/layout/activity_main.xml" value="0.175" />
+        <entry key="..\:/Users/Tyree/Downloads/ChefsChoice/myapplication/src/main/res/layout/activity_main1.xml" value="0.1" />
+        <entry key="..\:/Users/Tyree/Downloads/ChefsChoice/myapplication/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/Tyree/Downloads/ChefsChoice/myapplication/src/main/res/layout/fragment_login.xml" value="0.175" />
+        <entry key="..\:/Users/Tyree/Downloads/ChefsChoice/myapplication/src/main/res/layout/fragment_main.xml" value="0.175" />
         <entry key="..\:/Users/lucya/Downloads/ChefsChoice/myapplication/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1765" />
         <entry key="..\:/Users/lucya/Downloads/ChefsChoice/myapplication/src/main/res/drawable/ic_favorite.xml" value="0.1605" />
         <entry key="..\:/Users/lucya/Downloads/ChefsChoice/myapplication/src/main/res/drawable/ic_info.xml" value="0.1605" />
