@@ -15,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "937939907114-s852dp9hppvrfbpd1no09llh1lcrl7mc.apps.googleusercontent.com",
+          "client_id": "937939907114-mofh5c9irpui06esamhvms1idssg1n80.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.myapplication",
@@ -29,7 +29,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC6rZEfwtHx9KD_3dqT2pLcJ822qMQ604c"
+          "current_key": "AIzaSyBRAjVYLqAH-4O-3byQxx_Phvsegt2SFRw"
         }
       ],
       "services": {
